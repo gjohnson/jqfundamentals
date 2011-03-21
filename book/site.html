@@ -160,8 +160,8 @@
   SyntaxHighlighter.all();
 
 	$(document).delegate('.code, .term', 'click', function(e){
-		var pattern = /^(?:\$\.)(fn\.)?([a-z]+)$/
-				matched = pattern.exec($(this).text())
+		var pattern = /^(?:\$\.)(fn\.)?([a-z]+)$/,
+				matched = pattern.exec($(this).text()),
 				method = '';
 
 		if (matched) {
@@ -169,7 +169,6 @@
 			window.open('http://api.jquery.com/' + method, '_docs');
 		}
 	});
-	
 
   });
   </script>
